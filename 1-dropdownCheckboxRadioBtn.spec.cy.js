@@ -29,6 +29,7 @@ it ('Automated test for Dropdown Menu(s), Checkboxe(s) & Radio Button(s)', () =>
     .parents('#checkboxes')
     .find('input[value="option-3"]')
     .uncheck()
+    .should('not.be.checked')
 
     cy.get('#radio-buttons')
     .find('input[value="green"]')
